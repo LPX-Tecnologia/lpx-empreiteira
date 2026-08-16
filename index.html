@@ -17,6 +17,224 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <!-- CSS Custom -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Estilo adicional para trocar a imagem de fundo do Hero sem alterar o CSS -->
+    <style>
+        .hero {
+            background: linear-gradient(rgba(26,42,58,0.7), rgba(26,42,58,0.7)), url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1920&h=1080&fit=crop') center/cover no-repeat;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/logo.svg" alt="LPX Logo" class="logo-img animate__animated animate__pulse animate__infinite">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="carreiras.html">Vagas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    <li class="nav-item ms-2">
+                        <a href="servicos.html#orcamento" class="btn btn-custom btn-sm">Solicitar Orçamento</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero d-flex align-items-center">
+        <div class="container text-center text-white">
+            <h1 class="display-3 fw-bold animate__animated animate__fadeInDown">Construindo Sonhos com <span class="text-highlight">LPX</span></h1>
+            <p class="lead mt-3 animate__animated animate__fadeInUp animate__delay-1s">Serviços de engenharia e construção civil para residências e empresas</p>
+            <div class="mt-4 animate__animated animate__fadeInUp animate__delay-2s">
+                <a href="servicos.html" class="btn btn-custom btn-lg me-2"><i class="fas fa-hard-hat"></i> Ver Serviços</a>
+                <a href="carreiras.html" class="btn btn-outline-light btn-lg"><i class="fas fa-users"></i> Trabalhe Conosco</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SERVIÇOS EM DESTAQUE -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5" data-aos="fade-up">Nossos Serviços</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-building fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title">Construção Civil</h5>
+                            <p class="card-text">Obras residenciais e comerciais com garantia de qualidade.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-paint-roller fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title">Reformas</h5>
+                            <p class="card-text">Reformas completas ou parciais, do projeto à execução.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-drafting-compass fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title">Projetos e Consultoria</h5>
+                            <p class="card-text">Elaboração de projetos e acompanhamento técnico.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4" data-aos="fade-up">
+                <a href="servicos.html" class="btn btn-custom">Ver Todos os Serviços</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2 class="section-title">Sobre a LPX</h2>
+                    <p class="text-muted">Somos uma empreiteira com mais de 15 anos de experiência no mercado, especializada em construção civil, reformas e gerenciamento de obras. Nossa equipe é composta por profissionais qualificados e comprometidos com a excelência.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check-circle text-success"></i> Equipe própria e terceirizada</li>
+                        <li><i class="fas fa-check-circle text-success"></i> Garantia em todos os serviços</li>
+                        <li><i class="fas fa-check-circle text-success"></i> Atendimento personalizado</li>
+                    </ul>
+                    <a href="contato.html" class="btn btn-custom mt-3">Fale Conosco</a>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <!-- Imagem trocada: equipe em obra -->
+                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&h=400&fit=crop" alt="Equipe LPX em obra" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5" data-aos="fade-up">O que dizem nossos clientes</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card testimonial-card h-100 p-4">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <p class="mt-3">"Excelente trabalho, cumpriram todos os prazos e o acabamento ficou impecável."</p>
+                        <h6 class="fw-bold">Maria Silva</h6>
+                        <small class="text-muted">Reforma residencial</small>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card testimonial-card h-100 p-4">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <p class="mt-3">"Profissionais muito competentes, recomendo a LPX para qualquer obra."</p>
+                        <h6 class="fw-bold">João Pereira</h6>
+                        <small class="text-muted">Construção comercial</small>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="card testimonial-card h-100 p-4">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <p class="mt-3">"Atendimento rápido e orçamento justo. Superaram minhas expectativas."</p>
+                        <h6 class="fw-bold">Ana Costa</h6>
+                        <small class="text-muted">Projeto e consultoria</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-5 bg-primary text-white text-center">
+        <div class="container" data-aos="fade-up">
+            <h2 class="fw-bold">Pronto para começar seu projeto?</h2>
+            <p class="lead">Solicite um orçamento gratuito sem compromisso.</p>
+            <a href="servicos.html#orcamento" class="btn btn-custom btn-lg">Solicitar Orçamento</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white pt-4 pb-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/logo.svg" alt="LPX" class="logo-footer mb-3">
+                    <p>Construção civil e reformas com qualidade e segurança.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50">Início</a></li>
+                        <li><a href="servicos.html" class="text-white-50">Serviços</a></li>
+                        <li><a href="carreiras.html" class="text-white-50">Vagas</a></li>
+                        <li><a href="contato.html" class="text-white-50">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contato</h5>
+                    <p><i class="fas fa-phone"></i> (11) 99242-2674</p>
+                    <p><i class="fas fa-envelope"></i> lpxconstrutor</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Jaraguá do Sul, SC</p>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <p class="text-center mb-0">© 2025 LPX Empreiteira. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Botão WhatsApp flutuante -->
+    <a href="https://wa.me/5511992422674?text=Olá! Gostaria de um orçamento." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LPX Empreiteira – Construção Civil de Qualidade</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- CSS Custom -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
