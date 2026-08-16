@@ -1,200 +1,67 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serviços – LPX Empreiteira</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="assets/logo.svg" alt="LPX Logo" class="logo-img animate__animated animate__pulse animate__infinite">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="servicos.html">Serviços</a></li>
-                    <li class="nav-item"><a class="nav-link" href="carreiras.html">Vagas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
-                    <li class="nav-item ms-2">
-                        <a href="servicos.html#orcamento" class="btn btn-custom btn-sm">Solicitar Orçamento</a>
-                    </li>
-                </ul>
+<!-- LISTA DE SERVIÇOS DETALHADA -->
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card service-detail-card h-100">
+                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=400&h=250&fit=crop" class="card-img-top" alt="Construção Civil">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-building text-primary"></i> Construção Civil</h5>
+                        <p class="card-text">Construção de residências, prédios comerciais e galpões industriais, com engenharia de qualidade e cumprimento de prazos.</p>
+                        <button class="btn btn-custom btn-sm" onclick="preencherOrcamento('Construção Civil')">Solicitar Orçamento</button>
+                    </div>
+                </div>
             </div>
-        </div>
-    </nav>
-
-    <!-- HEADER DA PÁGINA -->
-    <header class="page-header text-white text-center d-flex align-items-center">
-        <div class="container">
-            <h1 class="display-4 fw-bold animate__animated animate__fadeInDown">Nossos Serviços</h1>
-            <p class="lead animate__animated animate__fadeInUp">Soluções completas em construção civil e reformas</p>
-        </div>
-    </header>
-
-    <!-- LISTA DE SERVIÇOS DETALHADA -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card service-detail-card h-100">
-                        <img src="https://picsum.photos/400/250?random=2" class="card-img-top" alt="Construção Civil">
-                        <div class="card-body">
-                            <h5 class="card-title"><i class="fas fa-building text-primary"></i> Construção Civil</h5>
-                            <p class="card-text">Construção de residências, prédios comerciais e galpões industriais, com engenharia de qualidade e cumprimento de prazos.</p>
-                            <button class="btn btn-custom btn-sm" onclick="preencherOrcamento('Construção Civil')">Solicitar Orçamento</button>
-                        </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card service-detail-card h-100">
+                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=250&fit=crop" class="card-img-top" alt="Reformas Residenciais">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-paint-roller text-primary"></i> Reformas Residenciais</h5>
+                        <p class="card-text">Reformas completas, desde pequenos reparos até grandes transformações, com acabamento premium.</p>
+                        <button class="btn btn-custom btn-sm" onclick="preencherOrcamento('Reformas Residenciais')">Solicitar Orçamento</button>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card service-detail-card h-100">
-                        <img src="https://picsum.photos/400/250?random=3" class="card-img-top" alt="Reformas">
-                        <div class="card-body">
-                            <h5 class="card-title"><i class="fas fa-paint-roller text-primary"></i> Reformas Residenciais</h5>
-                            <p class="card-text">Reformas completas, desde pequenos reparos até grandes transformações, com acabamento premium.</p>
-                            <button class="btn btn-custom btn-sm" onclick="preencherOrcamento('Reformas Residenciais')">Solicitar Orçamento</button>
-                        </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card service-detail-card h-100">
+                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&h=250&fit=crop" class="card-img-top" alt="Projetos e Consultoria">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-drafting-compass text-primary"></i> Projetos e Consultoria</h5>
+                        <p class="card-text">Elaboração de projetos arquitetônicos, estruturais e acompanhamento técnico de obras.</p>
+                        <button class="btn btn-custom btn-sm" onclick="preencherOrcamento('Projetos e Consultoria')">Solicitar Orçamento</button>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card service-detail-card h-100">
-                        <img src="https://picsum.photos/400/250?random=4" class="card-img-top" alt="Projetos">
-                        <div class="card-body">
-                            <h5 class="card-title"><i class="fas fa-drafting-compass text-primary"></i> Projetos e Consultoria</h5>
-                            <p class="card-text">Elaboração de projetos arquitetônicos, estruturais e acompanhamento técnico de obras.</p>
-                            <button class="btn btn-custom btn-sm" onclick="preencherOrcamento('Projetos e Consultoria')">Solicitar Orçamento</button>
-                        </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card service-detail-card h-100">
+                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=250&fit=crop" class="card-img-top" alt="Instalações Elétricas e Hidráulicas">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-bolt text-primary"></i> Instalações Elétricas e Hidráulicas</h5>
+                        <p class="card-text">Serviços completos de elétrica, hidráulica e prevenção de incêndios, com profissionais certificados.</p>
+                        <button class="btn btn-custom btn-sm" onclick="preencherOrcamento('Instalações Elétricas e Hidráulicas')">Solicitar Orçamento</button>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card service-detail-card h-100">
-                        <img src="https://picsum.photos/400/250?random=5" class="card-img-top" alt="Instalações">
-                        <div class="card-body">
-                            <h5 class="card-title"><i class="fas fa-bolt text-primary"></i> Instalações Elétricas e Hidráulicas</h5>
-                            <p class="card-text">Serviços completos de elétrica, hidráulica e prevenção de incêndios, com profissionais certificados.</p>
-                            <button class="btn btn-custom btn-sm" onclick="preencherOrcamento('Instalações Elétricas e Hidráulicas')">Solicitar Orçamento</button>
-                        </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card service-detail-card h-100">
+                    <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=400&h=250&fit=crop" class="card-img-top" alt="Acabamento e Pintura">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-brush text-primary"></i> Acabamento e Pintura</h5>
+                        <p class="card-text">Pintura residencial e comercial, texturas, gesso e drywall para um acabamento perfeito.</p>
+                        <button class="btn btn-custom btn-sm" onclick="preencherOrcamento('Acabamento e Pintura')">Solicitar Orçamento</button>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card service-detail-card h-100">
-                        <img src="https://picsum.photos/400/250?random=6" class="card-img-top" alt="Acabamento">
-                        <div class="card-body">
-                            <h5 class="card-title"><i class="fas fa-brush text-primary"></i> Acabamento e Pintura</h5>
-                            <p class="card-text">Pintura residencial e comercial, texturas, gesso e drywall para um acabamento perfeito.</p>
-                            <button class="btn btn-custom btn-sm" onclick="preencherOrcamento('Acabamento e Pintura')">Solicitar Orçamento</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card service-detail-card h-100">
-                        <img src="https://picsum.photos/400/250?random=7" class="card-img-top" alt="Manutenção">
-                        <div class="card-body">
-                            <h5 class="card-title"><i class="fas fa-tools text-primary"></i> Manutenção Predial</h5>
-                            <p class="card-text">Manutenção preventiva e corretiva para condomínios, empresas e residências.</p>
-                            <button class="btn btn-custom btn-sm" onclick="preencherOrcamento('Manutenção Predial')">Solicitar Orçamento</button>
-                        </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card service-detail-card h-100">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&h=250&fit=crop" class="card-img-top" alt="Manutenção Predial">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-tools text-primary"></i> Manutenção Predial</h5>
+                        <p class="card-text">Manutenção preventiva e corretiva para condomínios, empresas e residências.</p>
+                        <button class="btn btn-custom btn-sm" onclick="preencherOrcamento('Manutenção Predial')">Solicitar Orçamento</button>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- FORMULÁRIO DE ORÇAMENTO -->
-    <section id="orcamento" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="section-title text-center mb-4" data-aos="fade-up">Solicite um Orçamento</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-8" data-aos="fade-up">
-                    <form id="formOrcamento" class="card p-4 shadow">
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <label class="form-label">Nome*</label>
-                                <input type="text" class="form-control" id="orcNome" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label class="form-label">Telefone/WhatsApp*</label>
-                                <input type="tel" class="form-control" id="orcTelefone" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label class="form-label">E-mail</label>
-                                <input type="email" class="form-control" id="orcEmail">
-                            </div>
-                            <div class="col-md-6">
-                                <label class="form-label">Tipo de Serviço*</label>
-                                <select class="form-select" id="orcServico" required>
-                                    <option value="">Selecione...</option>
-                                    <option>Construção Civil</option>
-                                    <option>Reformas Residenciais</option>
-                                    <option>Projetos e Consultoria</option>
-                                    <option>Instalações Elétricas e Hidráulicas</option>
-                                    <option>Acabamento e Pintura</option>
-                                    <option>Manutenção Predial</option>
-                                </select>
-                            </div>
-                            <div class="col-12">
-                                <label class="form-label">Descrição do Projeto*</label>
-                                <textarea class="form-control" id="orcDescricao" rows="4" required></textarea>
-                            </div>
-                            <div class="col-12 text-center">
-                                <button type="submit" class="btn btn-custom btn-lg">Enviar Solicitação</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="bg-dark text-white pt-4 pb-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="assets/logo.svg" alt="LPX" class="logo-footer mb-3">
-                    <p>Construção civil e reformas com qualidade e segurança.</p>
-                </div>
-                <div class="col-md-4">
-                    <h5>Links Rápidos</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-white-50">Início</a></li>
-                        <li><a href="servicos.html" class="text-white-50">Serviços</a></li>
-                        <li><a href="carreiras.html" class="text-white-50">Vagas</a></li>
-                        <li><a href="contato.html" class="text-white-50">Contato</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h5>Contato</h5>
-                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
-                    <p><i class="fas fa-envelope"></i> contato@lpx.com.br</p>
-                    <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
-                </div>
-            </div>
-            <hr class="bg-light">
-            <p class="text-center mb-0">© 2025 LPX Empreiteira. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-
-    <!-- Botão WhatsApp flutuante -->
-    <a href="https://wa.me/5511999999999?text=Olá! Gostaria de um orçamento." class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/main.js"></script>
-</body>
-</html>
+    </div>
+</section>
